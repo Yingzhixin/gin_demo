@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/Yingzhixin/gin_demo/models"
+	"github.com/spf13/viper"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )
@@ -11,14 +12,14 @@ import (
 //DB 数据库实例
 var DB *gorm.DB
 
-//InitDB 初始化数据库连接
+//InitDB 初始化mysql数据库连接
 func InitDB() *gorm.DB {
-	host := "localhost"
-	port := "3306"
-	database := "demo"
-	username := "root"
-	password := "yzx19981014"
-	charset := "utf8"
+	host := viper.GetString("datasource.host")
+	port := viper.GetString("datasource.port")
+	database := viper.GetString("datasource.database")
+	username := viper.GetString("datasource.username")
+	password := viper.GetString("datasource.password")
+	charset := viper.GetString("datasource.charset")
 	args := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s?charset=%s&parseTime=True&loc=Local",
 		username,
 		password,
