@@ -17,7 +17,9 @@ type Claims struct {
 
 //ReleaseToken 建立token
 func ReleaseToken(user models.User) (string, error) {
-	expirationTime := time.Now().Add(30 * time.Minute)
+	//设置token过期时间
+	expirationTime := time.Now().Add(300 * time.Second)
+
 	claims := &Claims{
 		UserID: user.ID,
 		StandardClaims: jwt.StandardClaims{

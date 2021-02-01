@@ -1,6 +1,7 @@
 FROM golang:latest
 
 # RUN git clone https://github.com/Yingzhixin/gin_demo.git
+# remember to change the "host" in /config/application.yml to your docker_mysql_IPAddress
 
 WORKDIR $GOPATH/src/github.com/Yingzhixin/gin_demo
 COPY . $GOPATH/src/github.com/Yingzhixin/gin_demo
