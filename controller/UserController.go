@@ -4,10 +4,10 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/Yingzhixin/gin_demo/common"
+	"github.com/Yingzhixin/gin_demo/models"
+	"github.com/Yingzhixin/gin_demo/util"
 	"github.com/gin-gonic/gin"
-	"github.com/yingzhixin/demo/common"
-	"github.com/yingzhixin/demo/models"
-	"github.com/yingzhixin/demo/util"
 	"golang.org/x/crypto/bcrypt"
 	"gorm.io/gorm"
 )

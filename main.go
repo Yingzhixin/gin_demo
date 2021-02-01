@@ -1,8 +1,8 @@
 package main
 
 import (
+	"github.com/Yingzhixin/gin_demo/common"
 	"github.com/gin-gonic/gin"
-	"github.com/yingzhixin/demo/common"
 )
 
 func main() {

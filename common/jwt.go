@@ -3,8 +3,8 @@ package common
 import (
 	"time"
 
+	"github.com/Yingzhixin/gin_demo/models"
 	"github.com/dgrijalva/jwt-go"
-	"github.com/yingzhixin/demo/models"
 )
 
 var jwtKey = []byte("a_secret_crect")

@@ -1,9 +1,9 @@
 package main
 
 import (
+	"github.com/Yingzhixin/gin_demo/controller"
+	"github.com/Yingzhixin/gin_demo/middleware"
 	"github.com/gin-gonic/gin"
-	"github.com/yingzhixin/demo/controller"
-	"github.com/yingzhixin/demo/middleware"
 )
 
 //CollectRoute 处理http

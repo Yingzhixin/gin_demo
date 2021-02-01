@@ -3,7 +3,7 @@ package common
 import (
 	"fmt"
 
-	"github.com/yingzhixin/demo/models"
+	"github.com/Yingzhixin/gin_demo/models"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )

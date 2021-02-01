@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/Yingzhixin/gin_demo/common"
+	"github.com/Yingzhixin/gin_demo/models"
 	"github.com/gin-gonic/gin"
-	"github.com/yingzhixin/demo/common"
-	"github.com/yingzhixin/demo/models"
 )
 
 //AuthMiddleware 用户认证中间件

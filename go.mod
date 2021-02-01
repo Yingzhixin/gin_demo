@@ -1,4 +1,4 @@
-module github.com/yingzhixin/demo
+module github.com/Yingzhixin/gin_demo
 
 go 1.15
 
