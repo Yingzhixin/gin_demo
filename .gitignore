@@ -1,3 +1,4 @@
 go.sum
 gin_demo
 gin_demo.exe
+.DS_Store
