@@ -1,4 +1,4 @@
-FROM golang:latest
+FROM golang
 
 # RUN git clone https://github.com/Yingzhixin/gin_demo.git
 # remember to change the "host" in /config/application.yml to your docker_mysql_IPAddress
